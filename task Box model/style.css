@@ -1,0 +1,38 @@
+<div class="figure"></div>
+
+.figure {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #0072C6 50%,
+    transparent 50.5%
+  ), radial-gradient(
+    circle at 50% 50%,
+    #FFDD00 50%,
+    #0072C6 50.5%
+  );
+}
+
+
+
+<div class="figure"></div>
+
+.figure {
+  width: 200px;
+  height: 200px;
+  background-color: #0072C6;
+  position: relative;
+}
+
+.figure::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #FFDD00;
+  border-radius: 50%;
+}
