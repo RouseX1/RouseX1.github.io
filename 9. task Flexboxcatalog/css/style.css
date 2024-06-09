@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.catalog {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #bbb;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #bbb;
+    position: relative;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+.catalog-title {
+    border-bottom: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.catalog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+.content-description a {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #009de1;
+    text-transform: uppercase;
+}
+
+.price {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regular-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    font-weight: bold;
+}
+
+.bottom-buy,
+.bottom-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bottom-buy a,
+.bottom-soon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bottom-buy a {
+    background-color: #f0e524;
+    width: 120px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.bottom-soon a {
+    background-color: #cc3399;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.sticker-new {
+    background: #86b022;
+}
+
+.sticker-top {
+    background: #009de1;
+    text-align: center;
+}
+
+.sticker-new,
+.sticker-top {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    left: calc(50% - 25px);
+    color: white;
+    border: 3px solid white;
+    text-transform: uppercase;
+}
